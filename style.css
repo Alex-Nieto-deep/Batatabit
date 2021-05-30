@@ -30,6 +30,7 @@ header {
     text-align: center;
     width: 100%;
     min-width: 320px;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
 }
 
 header img {
@@ -47,5 +48,20 @@ header img {
     height: 218px;
     align-self: center;
     text-align: center;
+}
+
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--just-white);
+}
+
+.header--title-container p {
+    margin: 25px 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
 }
 
