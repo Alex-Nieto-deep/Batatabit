@@ -229,3 +229,28 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.currency-table--date {
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+
+.currency-table--date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: var(--warm-black);
+}
+
+.main-currency-table .comisiones {
+    color: var(--secondary-blue);
+}
+
+.table-secund {
+    background-color: var(--soft-blue);
+}
