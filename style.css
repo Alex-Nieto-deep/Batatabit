@@ -254,3 +254,7 @@ main {
 .table-secund {
     background-color: var(--soft-blue);
 }
+
+.currency-table--container .table__left {
+    padding-right: 10px;
+}
