@@ -182,7 +182,7 @@ main {
     font-weight: 500;
     line-height: 1.9rem;
     color: var(--grey);
-    background-color: var(--just-white);
+    background-color: var(--off-white);
 }
 
 .currency-table--container .table__top-left {
@@ -257,4 +257,48 @@ main {
 
 .currency-table--container .table__left {
     padding-right: 10px;
+}
+
+/* seccion de beneficios */
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--off-white);
+}
+
+.product-detail--batata-logo {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 20px);
+    background-image: url('./assets/icons/batata.svg');
+}
+
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #5d5d5d;
 }
