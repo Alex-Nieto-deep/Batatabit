@@ -18,6 +18,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
 }
@@ -98,7 +99,7 @@ header img {
 main {
     width: 100%;
     height: auto;
-    background-color: #201E1C;
+    background-color: var(--warm-black);
 }
 
 .main-exchange-container {
@@ -370,4 +371,124 @@ main {
     font-weight: bold;
     line-height: 2.4rem;
     color: var(--just-white);
+}
+
+/* seccion tarjetas */
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+    background: var(--warm-black);
+}
+
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.plans--title h2 {
+    padding-top: 40px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.plans--title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+.plans-container--slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 30px;
+
+}
+
+.plans-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background: var(--black);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.recommended {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    top: -15px;
+    left: calc(50% -  60px);
+    padding: 6px;
+    font-size: 1.4rem;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--off-white);
+}
+
+.plan-card--price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--off-white);
+}
+
+.plan-card--price span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--off-white);
+    vertical-align: 25px;
+}
+
+.plan-card--saving {
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+.plan-card-ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background: var(--warm-black);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.plan-card-ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/icons/orange-right-arrow.svg') ;
+    vertical-align: text-bottom;
 }
